@@ -16,5 +16,10 @@ pipeline{
                 sh 'echo "am deploying the image in docker and editing this line"'
             }
         }
+        stage('Relese'){
+            steps{
+                sh 'echo "Relesing the build"'
+            }
+        }
     }
 }
