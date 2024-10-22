@@ -1,0 +1,20 @@
+pipeline{
+    agent any
+    stages{
+        stage('Build'){
+            steps{
+                sh 'echo "am building the docker"'
+            }
+        }
+        stage('Test'){
+            steps{
+                sh 'echo"am testing the docker"'
+            }
+        }
+        stage('Deploy'){
+            steps{
+                sh 'echo "am deploying the image in docker'
+            }
+        }
+    }
+}
